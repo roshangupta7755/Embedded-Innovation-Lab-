@@ -14,6 +14,16 @@
 
 ---
 
+## 🧾 Tech Stack
+
+![Arduino](https://img.shields.io/badge/Arduino-Uno-00979D?style=for-the-badge&logo=arduino)
+![Language](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B)
+![Sensor](https://img.shields.io/badge/Sensor-HC--SR04-green?style=for-the-badge)
+![Servo](https://img.shields.io/badge/Servo-SG90-orange?style=for-the-badge)
+![Type](https://img.shields.io/badge/Project-Embedded%20System-blueviolet?style=for-the-badge)
+
+---
+
 <div align="center">
 
 <table>
@@ -127,23 +137,6 @@ Angle: 35° | Distance: 35 cm
 
 ---
 
-<h2><font color="#00ffff">🖥 3D STRUCTURE CONCEPT</font></h2>
-
-• Stable rotating base  
-• Custom servo bracket  
-• Ultrasonic sensor holder  
-• Transparent radar dome  
-• Compact futuristic casing  
-
-Design Tools:
-
-<font color="#00ff88">Fusion 360</font>  
-<font color="#00ccff">Blender</font>  
-<font color="#ff66ff">SolidWorks</font>  
-<font color="#ffaa00">Tinkercad</font>  
-
----
-
 <h2><font color="#00ffff">📂 PROJECT STRUCTURE</font></h2>
 
 ```
@@ -154,17 +147,6 @@ Radar-System/
 ├── 3d-model.png
 └── README.md
 ```
-
----
-
-<h2><font color="#00ffff">🎯 APPLICATION AREAS</font></h2>
-
-🛰 Robotics Navigation  
-🛡 Smart Surveillance  
-🚧 Obstacle Detection  
-🎓 Embedded Systems Lab  
-🧪 Academic Demonstration  
-🔬 Innovation-Based Learning  
 
 ---
 
