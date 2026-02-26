@@ -1,115 +1,150 @@
-# 📡 Arduino Radar System  
+<div align="center">
 
-<p align="center">
-  <img src="https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif" width="500">
-</p>
+<h1>
+<font color="#00ffff">🛰 ARDUINO RADAR MONITORING SYSTEM</font>
+</h1>
 
-<p align="center">
-  <b>Real-Time Object Detection & Radar-Style Scanning System</b>
-</p>
+<h3>
+<font color="#00ff88">Real-Time Object Detection</font> |
+<font color="#00ccff">Distance Mapping</font> |
+<font color="#ff66ff">Embedded Prototype</font>
+</h3>
 
----
-
-## 🚀 Project Description
-
-This project simulates a real-time radar scanning system using:
-
-- Arduino UNO  
-- Ultrasonic Sensor (HC-SR04)  
-- Servo Motor  
-
-The system rotates the ultrasonic sensor from **0° to 180°** and continuously detects objects in its path.
-
-At each angle:
-
-- Object distance is calculated  
-- Angle + distance data is sent to the Serial Monitor  
-- Live detection results are displayed  
-
-This creates a radar-style scanning behavior similar to real radar systems.
-
-⚠️ Note: This is a small-scale educational prototype using ultrasonic waves instead of RF signals.
+</div>
 
 ---
 
-## 🛰️ Real-Time Monitoring
+<div align="center">
 
-The system displays:
+<table>
+<tr>
+<td><b><font color="#00ff88">System Mode</font></b></td>
+<td><font color="#00ccff">Live Scanning</font></td>
+</tr>
+<tr>
+<td><b><font color="#00ff88">Detection Range</font></b></td>
+<td><font color="#00ccff">0° → 180°</font></td>
+</tr>
+<tr>
+<td><b><font color="#00ff88">Distance Unit</font></b></td>
+<td><font color="#00ccff">Centimeters (cm)</font></td>
+</tr>
+<tr>
+<td><b><font color="#00ff88">Prototype Type</font></b></td>
+<td><font color="#00ccff">Educational Radar Model</font></td>
+</tr>
+</table>
 
-- Current scanning angle  
-- Distance of detected object (in cm)  
-- Continuous live updates  
+</div>
 
-Example Serial Monitor Output:
+---
+
+<h2><font color="#00ffff">🌐 PROJECT OVERVIEW</font></h2>
+
+This Arduino-based radar system simulates a <font color="#00ff88"><b>real-time object detection mechanism</b></font> using ultrasonic sensing technology.
+
+The ultrasonic sensor rotates using a servo motor and continuously scans its surroundings.  
+At every angle, the system calculates object distance and displays real-time data on the Serial Monitor.
+
+This creates a <font color="#00ccff"><b>radar-style scanning experience</b></font> similar to professional monitoring systems — built using low-cost embedded hardware.
+
+⚠ <font color="#ff6666"><b>Educational small-scale prototype. Real radar systems operate using RF waves.</b></font>
+
+---
+
+<h2><font color="#00ffff">⚙ SYSTEM WORKFLOW</font></h2>
+
+<font color="#00ff88">1️⃣ Servo motor rotates ultrasonic sensor</font>  
+<font color="#00ccff">2️⃣ Ultrasonic pulse is transmitted</font>  
+<font color="#ff66ff">3️⃣ Echo signal is received</font>  
+<font color="#ffaa00">4️⃣ Return time is measured</font>  
+<font color="#00ff88">5️⃣ Distance is calculated</font>  
 
 ```
-Angle: 45 | Distance: 32 cm
-Angle: 46 | Distance: 30 cm
-Angle: 47 | Distance: 28 cm
+Distance = (Time × 0.034) / 2
 ```
 
-This simulates how a radar system tracks object position and distance in real time.
+<font color="#00ccff">6️⃣ Angle + Distance displayed in Serial Monitor (9600 baud)</font>
 
 ---
 
-## 🧰 Hardware Components
+<h2><font color="#00ffff">💻 LIVE OUTPUT SAMPLE</font></h2>
 
-- Arduino UNO  
-- HC-SR04 Ultrasonic Sensor  
-- SG90 Servo Motor  
-- Breadboard  
-- Jumper Wires  
-- USB Cable  
+```
+Angle: 32° | Distance: 40 cm
+Angle: 33° | Distance: 38 cm
+Angle: 34° | Distance: 36 cm
+Angle: 35° | Distance: 35 cm
+```
+
+<font color="#00ff88"><b>This simulates object tracking in real-time.</b></font>
 
 ---
 
-## 🔌 Pin Configuration
+<h2><font color="#00ffff">🧰 HARDWARE MODULES</font></h2>
+
+<font color="#00ff88">🔹 Arduino UNO</font>  
+<font color="#00ccff">🔹 HC-SR04 Ultrasonic Sensor</font>  
+<font color="#ff66ff">🔹 SG90 Servo Motor</font>  
+<font color="#ffaa00">🔹 Breadboard</font>  
+<font color="#00ff88">🔹 Jumper Wires</font>  
+<font color="#00ccff">🔹 USB Cable</font>  
+
+---
+
+<h2><font color="#00ffff">🔌 PIN CONFIGURATION</font></h2>
 
 | Device | Arduino Pin |
 |--------|------------|
-| Ultrasonic TRIG | 10 |
-| Ultrasonic ECHO | 11 |
-| Servo Motor Signal | 9 |
-| VCC | 5V |
-| GND | GND |
+| Ultrasonic TRIG | <font color="#00ff88">10</font> |
+| Ultrasonic ECHO | <font color="#00ff88">11</font> |
+| Servo Signal | <font color="#00ff88">9</font> |
+| VCC | <font color="#00ff88">5V</font> |
+| GND | <font color="#00ff88">GND</font> |
 
 ---
 
-## ⚙️ Working Principle
+<h2><font color="#00ffff">🧠 CORE FEATURES</font></h2>
 
-1. Servo rotates ultrasonic sensor.
-2. Sensor emits ultrasonic pulse.
-3. Echo signal returns after hitting object.
-4. Arduino measures return time.
-5. Distance is calculated using:
-
-   Distance = (Time × 0.034) / 2
-
-6. Data is printed on Serial Monitor at 9600 baud.
-
-This produces a radar-like scanning and object detection effect.
+<font color="#00ff88">✔ 180° Rotational Scanning</font>  
+<font color="#00ccff">✔ Real-Time Object Detection</font>  
+<font color="#ff66ff">✔ Live Distance Mapping</font>  
+<font color="#ffaa00">✔ Lightweight Embedded Architecture</font>  
+<font color="#00ff88">✔ Expandable for Graphical Radar UI</font>  
+<font color="#00ccff">✔ Academic Demonstration Model</font>  
 
 ---
 
-## 🖥️ 3D Model Enhancement
+<h2><font color="#00ffff">🔮 FUTURE ENHANCEMENTS</font></h2>
 
-For a futuristic look, this project can include:
-
-- 3D printed rotating base  
-- Ultrasonic sensor mount  
-- Transparent radar dome  
-- Compact enclosure design  
-
-Tools you can use:
-
-- Fusion 360  
-- Blender  
-- SolidWorks  
-- Tinkercad  
+🔸 OLED / LCD Integration  
+🔸 Buzzer Alert  
+🔸 IoT Monitoring  
+🔸 Raspberry Pi Dashboard  
+🔸 Python Radar UI  
+🔸 AI-Based Object Classification  
+🔸 3D Printed Enclosure  
 
 ---
 
-## 📂 Project Folder Structure
+<h2><font color="#00ffff">🖥 3D STRUCTURE CONCEPT</font></h2>
+
+• Stable rotating base  
+• Custom servo bracket  
+• Ultrasonic sensor holder  
+• Transparent radar dome  
+• Compact futuristic casing  
+
+Design Tools:
+
+<font color="#00ff88">Fusion 360</font>  
+<font color="#00ccff">Blender</font>  
+<font color="#ff66ff">SolidWorks</font>  
+<font color="#ffaa00">Tinkercad</font>  
+
+---
+
+<h2><font color="#00ffff">📂 PROJECT STRUCTURE</font></h2>
 
 ```
 Radar-System/
@@ -122,56 +157,33 @@ Radar-System/
 
 ---
 
-## 🚀 Key Features
+<h2><font color="#00ffff">🎯 APPLICATION AREAS</font></h2>
 
-- 180° scanning motion  
-- Real-time object detection  
-- Live angle + distance display  
-- Low-cost embedded system prototype  
-- Educational radar simulation  
-
----
-
-## 🔮 Future Scope
-
-- Graphical radar interface using Processing  
-- Python-based real-time visualization  
-- OLED display integration  
-- Buzzer proximity alert  
-- IoT-based remote monitoring  
-- AI-based object classification  
+🛰 Robotics Navigation  
+🛡 Smart Surveillance  
+🚧 Obstacle Detection  
+🎓 Embedded Systems Lab  
+🧪 Academic Demonstration  
+🔬 Innovation-Based Learning  
 
 ---
 
-## 🎯 Applications
+<h2><font color="#00ffff">👨‍💻 DEVELOPER PROFILE</font></h2>
 
-- Robotics navigation  
-- Obstacle detection systems  
-- Smart surveillance prototypes  
-- Embedded systems lab demonstrations  
-
----
-
-## 👨‍💻 Developed By
-
-**Roshan Gupta**  
+<b><font color="#00ffcc">Roshan Gupta</font></b>  
 Embedded-Innovation-Lab  
 Bachelor of Computer Applications (BCA)
 
 ---
 
-## 🔗 Connect With Me
+<h2><font color="#00ffff">🔗 PROFESSIONAL NETWORK</font></h2>
 
 LinkedIn:  
-https://www.linkedin.com/in/roshan-gupta-rg7755  
-
-Future working demos and project updates will be shared there.
+<font color="#00ccff">https://www.linkedin.com/in/roshan-gupta-rg7755</font>
 
 ---
 
-## ⭐ Support
-
-If you found this project helpful:
+<h2><font color="#00ffff">⭐ SUPPORT THE PROJECT</font></h2>
 
 ⭐ Star the repository  
 🍴 Fork it  
@@ -179,6 +191,6 @@ If you found this project helpful:
 
 ---
 
-## 📜 License
+<h2><font color="#00ffff">📜 LICENSE</font></h2>
 
 Open-source for educational and innovation purposes.
