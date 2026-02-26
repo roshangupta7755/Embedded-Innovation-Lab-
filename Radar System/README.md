@@ -1,47 +1,54 @@
 # 📡 Arduino Radar System  
 
 <p align="center">
-  <img src="https://media.giphy.com/media/l3vR85PnGsBwu1PFK/giphy.gif" width="500">
+  <img src="https://media.giphy.com/media/26BRuo6sLetdllPAQ/giphy.gif" width="500">
 </p>
 
 <p align="center">
-  <b>⚡ Real-Time Ultrasonic Object Detection & Scanning System ⚡</b>
+  <b>Real-Time Object Detection & Radar-Style Scanning System</b>
 </p>
 
 ---
 
-## 🚀 Project Vision
+## 🚀 Project Description
 
-A futuristic radar simulation system built using Arduino, ultrasonic sensing, and servo motor control.
+This project simulates a real-time radar scanning system using:
 
-This project recreates a radar-style scanning interface using low-cost embedded components and demonstrates real-time object detection principles used in robotics and automation.
+- Arduino UNO  
+- Ultrasonic Sensor (HC-SR04)  
+- Servo Motor  
 
-Part of the **Embedded-Innovation-Lab** initiative.
+The system rotates the ultrasonic sensor from **0° to 180°** and continuously detects objects in its path.
 
----
+At each angle:
 
-## 🛰️ System Overview
+- Object distance is calculated  
+- Angle + distance data is sent to the Serial Monitor  
+- Live detection results are displayed  
 
-The system rotates an ultrasonic sensor from 0° to 180° using a servo motor.
+This creates a radar-style scanning behavior similar to real radar systems.
 
-At every angle:
-
-- Ultrasonic pulse is transmitted  
-- Echo signal is received  
-- Distance is calculated  
-- Angle + Distance data is displayed  
-
-⚠️ Note: This is an ultrasonic-based educational prototype. Real radar systems operate using RF waves.
+⚠️ Note: This is a small-scale educational prototype using ultrasonic waves instead of RF signals.
 
 ---
 
-## 🎥 Radar Scan Visualization (Concept)
+## 🛰️ Real-Time Monitoring
 
-<p align="center">
-  <img src="https://media.giphy.com/media/3o7TKtnuHOHHUjR38Y/giphy.gif" width="450">
-</p>
+The system displays:
 
-This animation represents the radar-style scanning concept implemented in this project.
+- Current scanning angle  
+- Distance of detected object (in cm)  
+- Continuous live updates  
+
+Example Serial Monitor Output:
+
+```
+Angle: 45 | Distance: 32 cm
+Angle: 46 | Distance: 30 cm
+Angle: 47 | Distance: 28 cm
+```
+
+This simulates how a radar system tracks object position and distance in real time.
 
 ---
 
@@ -62,37 +69,38 @@ This animation represents the radar-style scanning concept implemented in this p
 |--------|------------|
 | Ultrasonic TRIG | 10 |
 | Ultrasonic ECHO | 11 |
-| Servo Signal | 9 |
+| Servo Motor Signal | 9 |
 | VCC | 5V |
 | GND | GND |
 
 ---
 
-## ⚙️ Working Algorithm
+## ⚙️ Working Principle
 
-1. Rotate servo motor  
-2. Trigger ultrasonic pulse  
-3. Measure echo return time  
-4. Calculate distance  
+1. Servo rotates ultrasonic sensor.
+2. Sensor emits ultrasonic pulse.
+3. Echo signal returns after hitting object.
+4. Arduino measures return time.
+5. Distance is calculated using:
 
-```
-Distance = (Time × 0.034) / 2
-```
+   Distance = (Time × 0.034) / 2
 
-5. Print results to Serial Monitor (9600 baud)
+6. Data is printed on Serial Monitor at 9600 baud.
+
+This produces a radar-like scanning and object detection effect.
 
 ---
 
-## 🖥️ 3D Model Concept
+## 🖥️ 3D Model Enhancement
 
-Designed for future expansion with:
+For a futuristic look, this project can include:
 
-- 3D Printed Base  
-- Servo Mount Bracket  
-- Ultrasonic Holder  
-- Transparent Radar Dome  
+- 3D printed rotating base  
+- Ultrasonic sensor mount  
+- Transparent radar dome  
+- Compact enclosure design  
 
-Can be designed using:
+Tools you can use:
 
 - Fusion 360  
 - Blender  
@@ -114,34 +122,33 @@ Radar-System/
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
 - 180° scanning motion  
-- Real-time distance calculation  
-- Radar-style visualization support  
-- Expandable to graphical interface  
-- Embedded system demonstration model  
+- Real-time object detection  
+- Live angle + distance display  
+- Low-cost embedded system prototype  
+- Educational radar simulation  
 
 ---
 
 ## 🔮 Future Scope
 
-- OLED/LCD Integration  
+- Graphical radar interface using Processing  
+- Python-based real-time visualization  
+- OLED display integration  
 - Buzzer proximity alert  
-- Raspberry Pi radar visualization  
 - IoT-based remote monitoring  
 - AI-based object classification  
-- Fully enclosed 3D printed futuristic casing  
 
 ---
 
 ## 🎯 Applications
 
-- Robotics Navigation  
-- Smart Surveillance Systems  
-- Obstacle Detection  
-- Embedded Systems Lab Projects  
-- Academic Demonstration  
+- Robotics navigation  
+- Obstacle detection systems  
+- Smart surveillance prototypes  
+- Embedded systems lab demonstrations  
 
 ---
 
@@ -155,16 +162,16 @@ Bachelor of Computer Applications (BCA)
 
 ## 🔗 Connect With Me
 
-🌐 LinkedIn:  
+LinkedIn:  
 https://www.linkedin.com/in/roshan-gupta-rg7755  
 
-Future updates and project demonstrations will be shared there.
+Future working demos and project updates will be shared there.
 
 ---
 
 ## ⭐ Support
 
-If you found this project impressive:
+If you found this project helpful:
 
 ⭐ Star the repository  
 🍴 Fork it  
