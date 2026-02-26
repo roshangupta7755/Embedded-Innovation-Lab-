@@ -1,37 +1,117 @@
-# Radar System
+# 📡 Arduino Radar System
 
-This project demonstrates a basic **radar-like object detection system** that uses an ultrasonic sensor and microcontroller to scan and detect objects within range. The goal is to visualize how a simple radar works using cost-effective components and embedded programming techniques.
+An Arduino-based radar simulation system that detects objects using an ultrasonic sensor and displays real-time distance measurements while rotating with a servo motor.
+
+This project is part of the **Embedded-Innovation-Lab** repository.
 
 ---
 
 ## 🛰️ Project Overview
 
-A radar system is a sensing device that detects objects and measures their distance and position within a specific area. This implementation uses an ultrasonic sensor that emits sound waves and detects echo signals to calculate the distance to nearby objects. The sensor is mounted on a rotating mechanism to simulate a radar scanning effect, and the microcontroller processes the data to display useful readings. :contentReference[oaicite:0]{index=0}
+This project simulates a simple radar system using ultrasonic sound waves.
+
+The ultrasonic sensor rotates from 0° to 180° using a servo motor and detects nearby objects. Distance data is calculated and displayed through the Serial Monitor.
+
+> ⚠️ Note: This is an educational prototype. Real radar systems use radio frequency waves.
 
 ---
 
-## 🧰 Components Required
+## 🧰 Components Used
 
-| Component | Description |
-|-----------|-------------|
-| Ultrasonic Sensor (e.g., HC-SR04) | Detects distance by sending and receiving sound pulses |
-| Servo Motor | Rotates the sensor to scan different angles |
-| Microcontroller (Arduino / ESP32 / etc.) | Reads sensor data and controls servo |
-| Jumper Wires | For connections |
-| Breadboard | For prototyping |
-| Power Source | 5V DC supply |
+- Arduino UNO
+- Ultrasonic Sensor (HC-SR04)
+- Servo Motor (SG90)
+- Breadboard
+- Jumper Wires
+- USB Cable
+
+---
+
+## 🔌 Circuit Connections
+
+| Component | Arduino Pin |
+|-----------|------------|
+| Ultrasonic TRIG | 10 |
+| Ultrasonic ECHO | 11 |
+| Servo Signal | 9 |
+| VCC | 5V |
+| GND | GND |
 
 ---
 
 ## ⚙️ Working Principle
 
-1. The **microcontroller** triggers the ultrasonic sensor to send ultrasonic waves.  
-2. These waves bounce off nearby objects and return to the sensor.  
-3. The time taken for the echo to return is measured.  
-4. Using this time, the distance is calculated.  
-5. A **servo motor** rotates the sensor slowly to scan across angles, simulating a radar sweep.  
-6. Data is processed and displayed in the serial monitor or on a graphical interface (if available). :contentReference[oaicite:1]{index=1}
+1. Servo rotates from 0° to 180°.
+2. Ultrasonic sensor sends sound pulse.
+3. Echo returns after hitting object.
+4. Distance is calculated using:
+
+   Distance = (Time × Speed of Sound) / 2
+
+5. Distance is printed in Serial Monitor.
 
 ---
 
-## 📁 Project Structure
+## 💻 Arduino Code
+
+File: `radar_system.ino`
+
+Upload the code using Arduino IDE.
+Open Serial Monitor at 9600 baud rate.
+
+---
+
+## 🖥️ 3D Model
+
+You can create a 3D model using:
+- Tinkercad
+- Fusion 360
+- Blender
+
+3D Model includes:
+- Base platform
+- Servo mount
+- Ultrasonic holder
+- Optional protective dome
+
+---
+
+## 🚀 Features
+
+✔ 180° scanning  
+✔ Real-time distance detection  
+✔ Simple and low-cost setup  
+✔ Expandable to graphical radar visualization  
+
+---
+
+## 🔮 Future Improvements
+
+- Add LCD/OLED display
+- Add buzzer alert
+- Integrate with Raspberry Pi
+- Add wireless monitoring
+
+---
+
+## 📂 Folder Structure
+Radar-System/
+├── radar_system.ino
+├── circuit-diagram.png
+├── 3d-model.png
+└── README.md
+
+
+---
+
+## 👨‍💻 Developed By
+
+Roshan Gupta  
+Embedded-Innovation-Lab  
+Bachelor of Computer Applications (BCA)
+
+---
+
+## 📜 License
+
+Open-source for educational and innovation purposes.
