@@ -1,117 +1,133 @@
 # 📡 Arduino Radar System
 
-An Arduino-based radar simulation system that detects objects using an ultrasonic sensor and displays real-time distance measurements while rotating with a servo motor.
+A real-time object detection and scanning system built using Arduino, ultrasonic sensing, and servo motor control.
 
-This project is part of the **Embedded-Innovation-Lab** repository and is designed for academic learning, experimentation, and innovation.
-
----
-
-## 🛰️ Project Overview
-
-This project simulates a basic radar system using ultrasonic sound waves.
-
-The ultrasonic sensor rotates from 0° to 180° using a servo motor and continuously scans its surroundings. When an object is detected, the distance is calculated and displayed via Serial Monitor.
-
-> ⚠️ Note: This is an educational prototype. Real radar systems use radio frequency (RF) waves instead of ultrasonic waves.
+This project demonstrates how embedded systems can simulate radar-like scanning using low-cost components. It is part of the **Embedded-Innovation-Lab** and is developed for academic learning, experimentation, and innovation.
 
 ---
 
-## 🧰 Components Used
+## 🛰️ About The Project
 
-- Arduino UNO
-- Ultrasonic Sensor (HC-SR04)
-- Servo Motor (SG90)
-- Breadboard
-- Jumper Wires
-- USB Cable
+The Arduino Radar System rotates an ultrasonic sensor between 0° and 180° using a servo motor. At every angle, it measures the distance of nearby objects and sends real-time data to the Serial Monitor.
+
+Although this system mimics radar behavior visually, it uses ultrasonic sound waves instead of RF signals.
+
+> ⚠️ Educational Prototype – Not a real RF radar system.
 
 ---
 
-## 🔌 Circuit Connections
+## 🧰 Hardware Components
 
-| Component | Arduino Pin |
-|-----------|------------|
+- Arduino UNO  
+- HC-SR04 Ultrasonic Sensor  
+- SG90 Servo Motor  
+- Breadboard  
+- Jumper Wires  
+- USB Cable  
+
+---
+
+## 🔌 Pin Configuration
+
+| Device | Arduino Pin |
+|--------|------------|
 | Ultrasonic TRIG | 10 |
 | Ultrasonic ECHO | 11 |
-| Servo Signal | 9 |
+| Servo Motor Signal | 9 |
 | VCC | 5V |
 | GND | GND |
 
 ---
 
-## ⚙️ Working Principle
+## ⚙️ How It Works
 
-1. Servo rotates from 0° to 180°.
-2. Ultrasonic sensor sends a sound pulse.
-3. Echo returns after hitting an object.
-4. Distance is calculated using:
+1. Servo motor rotates the ultrasonic sensor.  
+2. The sensor emits ultrasonic pulses.  
+3. Sound waves reflect from nearby objects.  
+4. Echo return time is measured.  
+5. Distance is calculated using:  
 
-   Distance = (Time × Speed of Sound) / 2
+   ```
+   Distance = (Time × 0.034) / 2
+   ```
 
-5. Distance data is printed in Serial Monitor (9600 baud rate).
+6. Angle and distance are printed on Serial Monitor (9600 baud).  
+
+This creates a scanning radar-like effect.
 
 ---
 
-## 💻 Arduino Code
+## 💻 Source Code
 
-File: `radar_system.ino`  
+Main file:
+
+```
+radar_system.ino
+```
+
 Upload using Arduino IDE and open Serial Monitor at **9600 baud rate**.
 
 ---
 
 ## 🖥️ 3D Model Concept
 
-The 3D model includes:
+This project can be enhanced using a custom 3D-printed structure including:
 
-- Base platform
-- Servo motor mount
-- Ultrasonic sensor holder
-- Optional protective dome
+- Stable base platform  
+- Servo mounting bracket  
+- Ultrasonic sensor holder  
+- Optional transparent dome  
 
-3D design tools you can use:
-- Tinkercad
-- Fusion 360
-- Blender
-- SolidWorks
+You can design the model using:
+
+- Tinkercad  
+- Fusion 360  
+- Blender  
+- SolidWorks  
 
 ---
 
-## 📂 Folder Structure
+## 📂 Project Folder Structure
+
+```
 Radar-System/
+│
 ├── radar_system.ino
 ├── circuit-diagram.png
 ├── 3d-model.png
 └── README.md
-
-
----
-
-## 🚀 Features
-
-✔ 180° scanning  
-✔ Real-time distance detection  
-✔ Low-cost implementation  
-✔ Expandable for graphical radar visualization  
-✔ Suitable for academic demonstrations  
+```
 
 ---
 
-## 🔮 Future Improvements
+## 🚀 Key Features
 
-- Add LCD/OLED display
-- Add buzzer alert for close objects
-- Integrate with Raspberry Pi
-- Wireless monitoring via IoT
-- Real-time graphical radar using Processing / Python
+- 180° scanning range  
+- Real-time object detection  
+- Lightweight and low-cost system  
+- Expandable architecture  
+- Ideal for embedded systems demonstrations  
+
+---
+
+## 🔮 Future Enhancements
+
+- OLED/LCD Display Integration  
+- Buzzer alert for close-range detection  
+- IoT dashboard integration  
+- Raspberry Pi graphical interface  
+- Real-time radar visualization using Processing or Python  
+- 3D printed enclosure for professional finish  
 
 ---
 
 ## 🎯 Applications
 
-- Obstacle Detection
-- Robotics Navigation
-- Smart Security Systems
-- Embedded Systems Learning
+- Obstacle detection systems  
+- Robotics navigation  
+- Smart surveillance prototypes  
+- Embedded systems lab experiments  
+- Academic project demonstrations  
 
 ---
 
@@ -125,11 +141,21 @@ Bachelor of Computer Applications (BCA)
 
 ## 🔗 Connect With Me
 
-If you liked this project, feel free to connect with me on LinkedIn:
+LinkedIn Profile:  
+https://www.linkedin.com/in/roshan-gupta-rg7755  
 
-👉 Add your LinkedIn profile link here:
+Future project updates and working demonstrations will also be shared on LinkedIn.
 
-[LinkedIn Profile](https://www.linkedin.com/in/YOUR-LINK-HERE)
+---
+
+## 📢 LinkedIn Sharing Tags
+
+#EmbeddedSystems  
+#ArduinoProjects  
+#IoT  
+#EngineeringProjects  
+#Innovation  
+#BCAProjects  
 
 ---
 
@@ -137,9 +163,9 @@ If you liked this project, feel free to connect with me on LinkedIn:
 
 If you found this project helpful:
 
-- ⭐ Star this repository
-- 🍴 Fork it
-- 🔗 Share on LinkedIn
+- ⭐ Star the repository  
+- 🍴 Fork it  
+- 🔗 Share on LinkedIn  
 
 ---
 
