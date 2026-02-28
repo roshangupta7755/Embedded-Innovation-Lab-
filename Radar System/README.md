@@ -6,7 +6,7 @@
 
 <h3>
 <font color="#00ff88">Real-Time Object Detection</font> |
-<font color="#00ccff">Distance Mapping</font> |
+<font color="#00ccff">Distance Mapping</font> |  
 <font color="#ff66ff">Embedded Prototype</font>
 </h3>
 
