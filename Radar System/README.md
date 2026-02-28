@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 <h1>
 <font color="#00ffff">🛰 ARDUINO RADAR MONITORING SYSTEM</font>
 </h1>
@@ -93,12 +93,12 @@ Angle: 35° | Distance: 35 cm
 
 <h2><font color="#00ffff">🧰 HARDWARE MODULES</font></h2>
 
-<font color="#00ff88">🔹 Arduino UNO</font>  
-<font color="#00ccff">🔹 HC-SR04 Ultrasonic Sensor</font>  
-<font color="#ff66ff">🔹 SG90 Servo Motor</font>  
-<font color="#ffaa00">🔹 Breadboard</font>  
-<font color="#00ff88">🔹 Jumper Wires</font>  
-<font color="#00ccff">🔹 USB Cable</font>  
+🔹 Arduino UNO  
+🔹 HC-SR04 Ultrasonic Sensor  
+🔹 SG90 Servo Motor  
+🔹 Breadboard  
+🔹 Jumper Wires  
+🔹 USB Cable  
 
 ---
 
@@ -106,53 +106,25 @@ Angle: 35° | Distance: 35 cm
 
 | Device | Arduino Pin |
 |--------|------------|
-| Ultrasonic TRIG | <font color="#00ff88">10</font> |
-| Ultrasonic ECHO | <font color="#00ff88">11</font> |
-| Servo Signal | <font color="#00ff88">9</font> |
-| VCC | <font color="#00ff88">5V</font> |
-| GND | <font color="#00ff88">GND</font> |
+| Ultrasonic TRIG | 10 |
+| Ultrasonic ECHO | 11 |
+| Servo Signal | 9 |
+| VCC | 5V |
+| GND | GND |
 
 ---
 
-<h2><font color="#00ffff">🧠 CORE FEATURES</font></h2>
+<h2><font color="#00ffff">🔗 PROJECT DEMO</font></h2>
 
-<font color="#00ff88">✔ 180° Rotational Scanning</font>  
-<font color="#00ccff">✔ Real-Time Object Detection</font>  
-<font color="#ff66ff">✔ Live Distance Mapping</font>  
-<font color="#ffaa00">✔ Lightweight Embedded Architecture</font>  
-<font color="#00ff88">✔ Expandable for Graphical Radar UI</font>  
-<font color="#00ccff">✔ Academic Demonstration Model</font>  
+📹 Watch the full working demo on LinkedIn:
 
----
-
-<h2><font color="#00ffff">🔮 FUTURE ENHANCEMENTS</font></h2>
-
-🔸 OLED / LCD Integration  
-🔸 Buzzer Alert  
-🔸 IoT Monitoring  
-🔸 Raspberry Pi Dashboard  
-🔸 Python Radar UI  
-🔸 AI-Based Object Classification  
-🔸 3D Printed Enclosure  
-
----
-
-<h2><font color="#00ffff">📂 PROJECT STRUCTURE</font></h2>
-
-```
-Radar-System/
-│
-├── radar_system.ino
-├── circuit-diagram.png
-├── 3d-model.png
-└── README.md
-```
+👉 https://www.linkedin.com/posts/roshan-gupta-rg7755_embeddedsystems-arduino-iot-ugcPost-7433540286120865792-LvGD
 
 ---
 
 <h2><font color="#00ffff">👨‍💻 DEVELOPER PROFILE</font></h2>
 
-<b><font color="#00ffcc">Roshan Gupta</font></b>  
+Roshan Gupta  
 Embedded-Innovation-Lab  
 Bachelor of Computer Applications (BCA)
 
@@ -160,8 +132,8 @@ Bachelor of Computer Applications (BCA)
 
 <h2><font color="#00ffff">🔗 PROFESSIONAL NETWORK</font></h2>
 
-LinkedIn:  
-<font color="#00ccff">https://www.linkedin.com/in/roshan-gupta-rg7755</font>
+LinkedIn Profile:  
+https://www.linkedin.com/in/roshan-gupta-rg7755
 
 ---
 
