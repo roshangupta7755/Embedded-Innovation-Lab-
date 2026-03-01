@@ -2,7 +2,7 @@
 
 An Arduino-based **Automatic Toll Gate System** that detects vehicles using an ultrasonic sensor and automatically opens/closes the gate using a servo motor with LED status indicators.
 
----
+---  
 
 ## 🧾 Tech Stack
 
